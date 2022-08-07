@@ -46,8 +46,6 @@ void UART_VoidASYNCHSendString(u8* string_ptr);
 /*                               RX                                     */
 /************************************************************************/
 
-void UART_VoidRXINTEnable(u8 status);
-
 u8 UART_VoidSYNCHReceiveChar(u8 character);
 
 void UART_VoidASYNCHReceiveChar(void);
@@ -56,6 +54,6 @@ void UART_VoidASYNCHReceiveData(u8* data);
 
 void UART_VoidRXSetCallBack(void (*ptrToFunc) (void));
 
-
+void UART_VoidRXINTEnable(u8 status);
 
 #endif /* UART_INTERFACE_H_ */
